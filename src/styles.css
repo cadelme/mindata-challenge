@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0');
+
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -8,8 +11,15 @@
   --breakpoint-md: 768px; /* Tablet */
   --breakpoint-lg: 1024px; /* Desktop */
 
+  /* Fonts */
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-figtree: 'Figtree', sans-serif;
+
   /* Colors */
 
   --color-primary-dark: #343a40;
+  --color-gray-soft: #a6a2a2;
   --shadow-banner: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  --color-gray-muted: #bdbdbd;
 }

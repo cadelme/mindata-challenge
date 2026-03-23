@@ -1,1 +1,51 @@
-<p>content-list works!</p>
+<section class="w-full bg-white py-8 px-5">
+  <div class="flex flex-col gap-6">
+    <h2 class="font-bold text-[30px] leading-8 text-black">Lorem ipsum dolor sit</h2>
+    <p class="font-normal text-[18px] leading-6.75 text-black">Lorem ipsum dolor sit</p>
+  </div>
+
+  <div class="w-full mt-1.5">
+    <div class="relative">
+      <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+        <svg class="size-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </span>
+      <input
+        type="text"
+        placeholder="Lorem ipsum dolor sit"
+        class="w-full bg-gray-100 border-none py-3 pl-10 pr-4 rounded-lg text-sm focus:ring-2 focus:ring-primary-dark/10 outline-none"
+      />
+    </div>
+  </div>
+
+  <div class="flex flex-col mt-12 gap-12">
+    @for (item of articles; track $index) {
+      <article class="flex flex-col gap-4">
+        <div class="w-full aspect-video bg-gray-muted rounded-lg flex items-center justify-center">
+          <span class="font-figtree text-gray-soft font-bold text-3xl uppercase">Image</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="/calendar.svg" class="size-4" alt="" aria-hidden="true" />
+          <p class="font-bold text-[16px] leading-6 tracking-normal text-center text-primary-dark">
+            {{ item.date }}
+          </p>
+        </div>
+
+        <h3 class="text-[23px] leading-6.25 font-bold text-black">
+          {{ item.title }}
+        </h3>
+
+        <p class="font-normal text-[16px] leading-6 text-black line-clamp-6">
+          {{ item.description }}
+        </p>
+      </article>
+    }
+  </div>
+</section>
