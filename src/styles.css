@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0');
 
@@ -24,4 +24,23 @@
   --color-gray-muted: #bdbdbd;
   --color-gray-placeholder: #bdbdbd;
   --color-gray-bg-card: #c4c4c4;
+}
+
+/* Card background dark gradient */
+.bg-gradient-card-bottom {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 54%,
+    rgba(0, 0, 0, 0.9) 95%
+  );
+}
+
+/* Hide scrollbar in the carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
