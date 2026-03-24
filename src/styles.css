@@ -22,4 +22,6 @@
   --color-gray-soft: #a6a2a2;
   --shadow-banner: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   --color-gray-muted: #bdbdbd;
+  --color-gray-placeholder: #bdbdbd;
+  --color-gray-bg-card: #c4c4c4;
 }
