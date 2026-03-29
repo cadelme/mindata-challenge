@@ -53,7 +53,13 @@
           <h3
             class="text-[23px] md:text-[30px] leading-6.25 md:leading-9.5 font-bold text-black md:line-clamp-2 line-clamp-2 md:h-[76px]"
           >
-            {{ item.title }}
+            <span class="lg:hidden">
+              {{ item.titleTablet }}
+            </span>
+
+            <span class="hidden lg:block">
+              {{ item.titleDesktop }}
+            </span>
           </h3>
 
           <p class="font-normal text-[16px] leading-6 text-black line-clamp-6">
