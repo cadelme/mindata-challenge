@@ -23,6 +23,7 @@
           >
             <div
               class="absolute inset-0 bg-gradient-card flex flex-col justify-end p-6 z-10 text-white"
+              aria-hidden="true"
             >
               <span
                 class="absolute top-[46%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold font-figtree text-4xl leading-none text-gray-soft uppercase"
@@ -44,6 +45,7 @@
 
                 <a
                   href="#"
+                  [aria-label]="'Descargar información sobre ' + item.title"
                   class="flex items-center gap-2 font-bold text-base leading-6 text-white mt-4 md:mt-10 hover:underline"
                 >
                   <span>Lorem ipsum</span>
