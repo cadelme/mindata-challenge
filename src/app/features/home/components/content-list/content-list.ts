@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styles: ``,
 })
 export class ContentList {
-  public articles = Array.from({ length: 4 }, () => ({
+  public articles = Array.from({ length: 6 }, () => ({
     date: 'Lorem ipsum dolor sit amet.',
     title: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.',
     description:
